@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ /*body {
+    background: url(../img/background.jpg);
+    background-size: cover;
+ }*/
+
+ .header-container {
+    width: 950px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+ }
+
+.page-main-tittle {
+    position: relative;
+    display: inline-block;
+    font-family: 'Public Pixel', sans-serif;         
+    text-transform: uppercase;
+    font-size: 28px;
+    top: -10px;
+}
+
+.header-image-left, 
+.header-image-right {
+    display: inline;
+    width: 50px;
+}
+
+.main-container {
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    background-color: orangered;
+}
+
+.input-container-first {
+    position: relative;
+    float: left;
+    width: 45%;
+    height: auto;
+    margin: 20px;
+    background-color: aquamarine;
+}
+
+.tv-image {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+#text-input {
+    position: absolute;
+    width: 72.5%;
+    height: 39%;
+    top: 3.5%;
+    left: 4.5%;
+    resize: none;
+    z-index: 2;
+}
+
+.input-container-second{
+    position: relative;
+    top: -50px;
+}
+
+.input-container-top {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    bottom: -40px;
+}
+
+.console-wire {
+    position: relative;
+    width: 20%;
+    float: right;
+    right: 50px;
+}
+
+.input-container-bottom {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.game-console {
+    position: relative;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.output-container {
+    text-align: center;
+    float: right;
+    width: 40%;
+    height: 50%;
+    margin: 20px;
+    background-color: blueviolet;
+}
+
+.output-container-title {
+    width: 90%;
+    font-size: 16px;
+    margin: 15px auto;
+    font-family: 'Public Pixel', sans-serif;         
+    text-transform: uppercase;
+}
+
+#text-output {
+    width: 90%;
+    height: 65%;
+    resize: none;
+    margin: 10px auto;
+}
+
+
+
+
