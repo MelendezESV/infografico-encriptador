@@ -20,20 +20,20 @@
         <section class="section-container">
             <div class="input-container-first">
                 <img class="tv-image" src="img/tv.png" alt="tv-image">
-                <textarea id="text-input" cols="30" rows="10"></textarea>
+                <textarea id="text-input" cols="30" rows="10" onclick="textAreaBackground()"></textarea>
                 <div class="input-container-second">
                     <div class="input-container-top">
                         <img class="console-wire" src="img/console-wire.png" alt="console-wire">
                     </div>
                     <div class="input-container-bottom">
                         <img class="game-console" src="img/game-console.png" alt="game-console" usemap="#image-map">
-                        <div class="a-button">
+                        <div class="a-button" onclick="controls('A')">
 
                         </div>
-                        <div class="b-button">
+                        <div class="b-button" onclick="controls('B')">
 
                         </div>
-                        <div class="reset-button">
+                        <div class="reset-button" onclick="controls('Reset')">
                             
                         </div>
                     </div>
@@ -41,7 +41,10 @@
             </div>
             <div class="output-container">
                 <h2 class="output-container-title">Game Score</h2>
-                <textarea id="text-output" cols="30" rows="10"></textarea>
+                <textarea id="text-output" cols="30" rows="10" onclick="textAreaBackground('textOutput')"></textarea>
+                <div class="output-buttoms">
+
+                </div>
             </div>
             <div class="instructions-container">
                 <h2 class="instructions-container-title">Instrucciones</h2>
