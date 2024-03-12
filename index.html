@@ -9,7 +9,7 @@
     <title>Infografico Encriptador</title>
 </head>
 <body>
-    
+
     <header class="header-container">
         <img class="header-image-left" src="img/diskette.png" alt="header-image-left">
         <h1 class="page-main-tittle">Infografico Encriptador</h1>
@@ -20,30 +20,26 @@
         <section class="section-container">
             <div class="input-container-first">
                 <img class="tv-image" src="img/tv.png" alt="tv-image">
-                <textarea id="text-input" cols="30" rows="10" onclick="textAreaBackground()"></textarea>
+                <textarea id="text-input" pattern="[a-z]{1,15}" cols="30" rows="10" onclick="textAreaBackground()"></textarea>
                 <div class="input-container-second">
                     <div class="input-container-top">
                         <img class="console-wire" src="img/console-wire.png" alt="console-wire">
                     </div>
                     <div class="input-container-bottom">
                         <img class="game-console" src="img/game-console.png" alt="game-console" usemap="#image-map">
-                        <div class="a-button" onclick="controls('A')">
-
-                        </div>
-                        <div class="b-button" onclick="controls('B')">
-
-                        </div>
-                        <div class="reset-button" onclick="controls('Reset')">
-                            
-                        </div>
+                        <div class="a-button" onclick="controls('A')"></div>
+                        <div class="b-button" onclick="controls('B')"></div>
+                        <div class="reset-button" onclick="controls('Reset')"></div>
                     </div>
                 </div>
             </div>
+            
             <div class="output-container">
                 <h2 class="output-container-title">Game Score</h2>
                 <textarea id="text-output" cols="30" rows="10" onclick="textAreaBackground('textOutput')"></textarea>
-                <div class="output-buttoms">
-
+                <div class="output-buttons">
+                    <button class="buttons" onclick="buttonDelete()">Borrar</button>
+                    <button class="buttons" onclick="buttonCopy()">Copiar</button>
                 </div>
             </div>
             <div class="instructions-container">
@@ -52,7 +48,7 @@
                     <ul class="instructions-list">
                         <li class="instructions">Presiona el botón 'A' para encriptar.</li>
                         <li class="instructions">Presiona el botón 'B' para desencriptar.</li>
-                        <li class="instructions">Presiona el botón 'Reset' para borrar.</li>
+                        <li class="instructions">Presiona el botón 'Reset' para borrar todo.</li>
                     </ul>
                 </div>
             </div>

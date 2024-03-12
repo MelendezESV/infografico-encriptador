@@ -6,7 +6,9 @@
 
  body {
     background: url(../img/background.jpg);
+    background-color: rgba(123,152,150,255);
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Public Pixel', sans-serif;    
  }
 
@@ -110,6 +112,8 @@
 }
 
 .output-container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     float: right;
     width: 40%;
@@ -133,7 +137,7 @@
     width: 90%;
     height: 65%;
     resize: none;
-    margin: 10px auto;
+    margin: 5px auto 0 auto;
     border-radius: 8px;
     background: url(../img/score-screen.png);
     background-size: contain;
@@ -141,6 +145,18 @@
     background-position: center;
     color: rgb(255, 255, 255);
     padding: 20px;
+}
+
+.output-buttons {
+    margin: auto auto; 
+    padding: 5px;
+}
+
+.buttons {
+    background-color: rgb(4, 69, 76);
+    color: rgb(255, 255, 255);
+    padding: 5px 15px;
+    border-radius: 5px;
 }
 
 .instructions-container {
@@ -179,7 +195,6 @@
 .a-button {
     width: 5%;
     height: 6%; 
-    background-color: blue; 
     position: absolute; 
     right: 51%; 
     bottom: 7%; 
@@ -190,7 +205,6 @@
 .b-button {
     width: 5%;
     height: 6%; 
-    background-color: rgb(255, 128, 0); 
     position: absolute; 
     right: 58%; 
     bottom: 9.5%; 
@@ -201,7 +215,6 @@
 .reset-button {
     width: 6%; 
     height: 4%; 
-    background-color: rgb(7, 167, 216); 
     position: absolute; 
     right: 46%; 
     bottom: 35%; 
@@ -209,6 +222,25 @@
     transform: rotate(13deg);
 }
 
+@media only screen and (max-width: 800px) {
+    .page-main-tittle {
+      font-size: 14px;
+      text-shadow: 3px 3px rgba(255, 191, 0, 0.847);
+    }
 
+    .header-image-left, 
+    .header-image-right {
+        display: none;
+    }
+
+    .output-container-title, 
+    .instructions-container-title {
+        font-size: 12px;
+    }
+    
+    .instructions {
+        font-size: 8px;
+    }
+  }
 
 
